@@ -14,6 +14,28 @@
     <link rel="stylesheet" href="assets/morris-chart/morris.css">
 </head>
 <body>
+     <div class="main_bannner">
+        <div class="full_screen_overlay">
+            <div class="main_logo">
+                <img src="img/3vINzVas.png" class="img-responsive">
+            </div>
+            <div class="middle">
+                <!-- <h1>Stayzilla <br> <small>Mining chat analytics application</small></h1> -->
+                <!-- <button class="button btn-search-property" data-toggle="tooltip" data-placement="left" title="close">
+                    Search Your City
+                </button> -->
+                {{Form::open(['route' => 'pages.show','class' => 'form banner-form'])}}
+                <div class="form-group col-md-6 col-md-offset-3">
+                    {{Form::input('text','location',null,['placeholder' => 'Bangalore','required' => 'required'])}}
+                    <i class="fa fa-search"></i>
+                    {{Form::close()}}
+                </div>
+                 
+                {{Form::close()}}  
+            </div>
+        </div>
+    </div>
+
     <div id="header">
         <!-- Sidebar -->
         <div class="navbar-header">

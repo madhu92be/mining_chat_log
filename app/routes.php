@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@show');
 Route::get('/stayzilla', ['as' => 'pages.create','uses' => 'PagesController@create']);
 Route::post('/stayzilla', ['as' => 'pages.show','uses' => 'PagesController@show']);
