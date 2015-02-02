@@ -26,7 +26,7 @@
                 </button> -->
                 {{Form::open(['route' => 'pages.show','class' => 'form banner-form'])}}
                 <div class="form-group col-md-6 col-md-offset-3">
-                    {{Form::input('text','location',null,['placeholder' => 'Bangalore','required' => 'required'])}}
+                    {{Form::input('text','location',null,['placeholder' => 'Search Your City','required' => 'required'])}}
                     <i class="fa fa-search"></i>
                     {{Form::close()}}
                 </div>
