@@ -82,6 +82,7 @@ class PagesController extends \BaseController {
 			// fclose($file);
 
 		# chat_location_mapping.csv
+		
 			// $file = fopen('chat_location_mapping.csv', 'r');
 			// $host = "localhost";
 			// $username = "root";
@@ -113,9 +114,11 @@ class PagesController extends \BaseController {
 			// fclose($file);
 
 
+		# In the front end the input user gives is fetched and query is based on that input 
+		# and returned to ananlytics
+		# As per now we had given the input as static as per the demo purpose.
 
-
-
+		# static city data given as input 
 		$input = array('Chennai','Hyderabad','Bangalore','Delhi','Mumbai','Goa','Manali','Kolkata');
 		$chat_count = array();
 		for ($i=0; $i < sizeof($input); $i++) { 
