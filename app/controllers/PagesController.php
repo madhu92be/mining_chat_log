@@ -2,23 +2,12 @@
 
 class PagesController extends \BaseController {
 
-	/**
-	 * Display a listing of the resource.
-	 * GET /pages
-	 *
-	 * @return Response
-	 */
+
 	public function index()
 	{
 		return View::make('chart');
 	}
 
-	/**
-	 * Show the form for creating a new resource.
-	 * GET /pages/create
-	 *
-	 * @return Response
-	 */
 	public function create()
 	{
 		$locations = null;
@@ -26,14 +15,6 @@ class PagesController extends \BaseController {
 
 	}
 
-	
-	/**
-	 * Display the specified resource.
-	 * GET /pages/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
 	public function show()
 	{
 
@@ -137,7 +118,5 @@ class PagesController extends \BaseController {
 
 		return View::make('charts',compact('chat_count','input'));
 	}
-
-	
 
 }
